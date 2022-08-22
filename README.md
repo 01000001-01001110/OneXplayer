@@ -5,7 +5,7 @@ OneXPlayer Script/configs
 Please read the script and make sure it is something you want to run. 
 
 
-Remove apps deletes the windows-bloat-apps while still making it functional. 
+deleteapps.ps1 Powershell script to remove windows bloat. 
 
 Services stops the running services to give you more resources before you play. 
 
