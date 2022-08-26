@@ -1,20 +1,15 @@
 # OneXplayer
 OneXPlayer Script/configs
-Written for a Mini AMD 5800U
-
-Intent is to create a series of scripts to stop running services, and either uninstall, or remove bloatware from the devices. 
-
-In stopping the services from running I attempt to only stop processes that will not interfere with any form of the gameplay. 
-As these are networking devices I leave all wireless, wired, DHCP, DNS attributions alone and only focus on the non-essential services, for gameplay. 
 
 
-Please read the script and make sure it is something you want to run. 
+I originally wrote the scripts to work with the OneXPlayer and have found that the script works well with any new windows 11 computer. 
 
+Since, I have added a menu of choices, and instead of multiple scripts you have only one to run now. 
 
-deleteapps.ps1 Powershell script to remove windows bloat without breaking windows for gaming. 
+Here is what the menu looks like: 
+![image](https://user-images.githubusercontent.com/48245017/186959047-24893bc7-d1b0-499b-8ff5-e08b4dfc4fe5.png)
 
-stopsrvcs.ps1 stops the running services to give you more resources before you play. 
+If you would like to see something else added, have a question or problem, please submit an issue and I will address. 
 
-Let me know where I can improve. 
-
+Thank you, 
 -Alan Newingham
