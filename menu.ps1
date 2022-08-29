@@ -24,6 +24,7 @@ function Show-Menu
     Write-Host "6: Press '6' Install Live Tiles Anywhere"
     Write-Host "7: Press '7' Install Quick Assist"
     Write-Host "8: Press '8' Stop Services"
+    Write-Host "9: Press '9' Disable Lock Screen Floating Messages 
     Write-Host "Q: Press 'Q' to quit."
 }
 
