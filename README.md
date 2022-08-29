@@ -16,7 +16,7 @@ Thank you,
 -Net
 
 <h1>Running scripts from a shortcut</h1>
-To set the second script to run from a desktop shortcut right click and select> New>ShortuctInside the new shortcut location type something to the effect of, "powershell.exe -noexit -ExecutionPolicy Bypass -File c:\users\username\stopsrvcs.ps1"Click Next, Name the shortcut whatever you would like, Finish
+To set the second script to run from a desktop shortcut right click and select> New>Shortuct Inside the new shortcut location type something to the effect of, "powershell.exe -noexit -ExecutionPolicy Bypass -File c:\users\username\stopsrvcs.ps1"Click Next, Name the shortcut whatever you would like, Finish
 
 
 <h1>What does this script do?</h1>
