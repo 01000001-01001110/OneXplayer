@@ -21,7 +21,7 @@ To set the second script to run from a desktop shortcut right click and select> 
 
 <h1>What does this script do?</h1>
 
-First Creates a Restore Point named: "iNetsRestorePoint" in case anything bad happens. <br<<br>
+First Creates a Restore Point named: "iNetsRestorePoint" in case anything bad happens. <br><br>
 Opens the Menu <pre>
     Press '1' Nuke bloatware.
     Press '2' Install Chrome
@@ -141,18 +141,20 @@ Messaging
 </pre>
 
 <h2>Option 2</h2><br><br>
-Option Two is used to install Chrome, as well as MSEdgeRedirect to remove Edge as the default browser down to the system level.
+<pre>Option Two is used to install Chrome, as well as MSEdgeRedirect to remove Edge as the default browser down to the system level.</pre><br><br>
 <h2>Option 3</h2><br><br>
-Option Three is used to install Firefox, as well as MSEdgeRedirect to remove Edge as the default browser down to the system level.
+<pre>Option Three is used to install Firefox, as well as MSEdgeRedirect to remove Edge as the default browser down to the system level.</pre><br><br>
 <h2>Option 4</h2><br><br>
-Option Four is used to change the system theme to Dark Mode.
+<pre>Option Four is used to change the system theme to Dark Mode.</pre><br><br>
 <h2>Option 5</h2><br><br>
-Option Five is used to change the system theme to Light Mode.
+<pre>Option Five is used to change the system theme to Light Mode.</pre><br><br>
 <h2>Option 6</h2><br><br>
-Option Six installs "Windows-8-like-tiles" on the computer. So you can have live tiles anywhere on the system you want.
+<pre>Option Six installs "Windows-8-like-tiles" on the computer. So you can have live tiles anywhere on the system you want.</pre><br><br>
 <h2>Option 7</h2><br><br>
-Option Seven is used to remove the Microsoft Quick Assist that is bundled with Windows, and replaces it with the new Quick Assist from the Microsoft Store.
+<pre>Option Seven is used to remove the Microsoft Quick Assist that is bundled with Windows, and replaces it with the new Quick Assist from the Microsoft Store.</pre><br><br>
 <h2>Option 8</h2><br><br>
-Option Eight is used before playing a game. It removes a few more services that are not vital to gameplay from running. To start them again reboot.
+<pre>Option Eight is used before playing a game. It removes a few more services that are not vital to gameplay from running. To start them again reboot.</pre><br><br>
+<h2>Option 9</h2><br><br>
+<pre>Option Nine is used to remove the floating ads/messages/propaganda.</pre><br><br>
 
-Option Q
+Option Q quits
