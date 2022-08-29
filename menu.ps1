@@ -85,35 +85,35 @@ do
 			 Get-AppxPackage "*AdobePhotoshopExpress*" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*HotspotShieldFreeVPN*" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*Microsoft.MicrosoftStickyNotes*" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.Microsoft3DViewer" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.MixedReality.Portal" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.Groove" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.BingWeather" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "microsoft.windowscommunicationsapps" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.Advertising.Xaml" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.ZuneMusic" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.ZuneVideo" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.Microsoft3DViewer" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.MixedReality.Portal" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.MicrosoftSolitaireCollection" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.Groove" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.BingWeather" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "microsoft.windowscommunicationsapps" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.Advertising.Xaml" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.ZuneMusic" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.ZuneVideo" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*Flipboard*" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*Twitter*" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*Facebook*" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*Royal Revolt*" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.WindowsFeedbackHub" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.SkypeApp" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.Getstarted" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.MicrosoftOfficeHub" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.WindowsMaps" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.People" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.YourPhone" -AllUsers | Remove-AppxPackage
-             Get-appxpackage "Microsoft.Getstarted" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Windows.CBSPreview" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.Windows.ParentalControls" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.ScreenSketch" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.GetHelp" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "*Hulu*" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "*Netflix*" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.WindowsFeedbackHub" -AllUsers | Remove-AppxPackage
+             	 	 Get-AppxPackage "Microsoft.SkypeApp" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.Getstarted" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.MicrosoftOfficeHub" -AllUsers | Remove-AppxPackage
+            		 Get-AppxPackage "Microsoft.WindowsMaps" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.People" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.YourPhone" -AllUsers | Remove-AppxPackage
+             		 Get-appxpackage "Microsoft.Getstarted" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Windows.CBSPreview" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.Windows.ParentalControls" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.ScreenSketch" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.GetHelp" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "*Hulu*" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "*Netflix*" -AllUsers | Remove-AppxPackage
 			 Get-AppxPackage "*Spotify*" -AllUsers | Remove-AppxPackage
-             Get-AppxPackage "Microsoft.Messaging" -AllUsers | Remove-AppxPackage
+             		 Get-AppxPackage "Microsoft.Messaging" -AllUsers | Remove-AppxPackage
 			 <#
 			 Windows 10 telemetry data includes basic system diagnostics information, logs of how frequently you use features and applications, system files, and likely more metrics that have yet to be disclosed. Fortunately, Microsoft allows users to set the amount of data they wish to share, but it cannot be completely turned off. Enterprise installations have an even more minimal setting but even then a small amount of security and diagnostic information is sent.
 			 #>
@@ -128,7 +128,7 @@ do
 			 
 			 #Showing known file extensions
 			 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Type DWord -Value 0
-             #Modifying Windows System Visual Effects for Performace Gains
+                         #Modifying Windows System Visual Effects for Performace Gains
 			 Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "DragFullWindows" -Type String -Value 0
 			 Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "MenuShowDelay" -Type String -Value 200
 			 Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "UserPreferencesMask" -Type Binary -Value ([byte[]](144,18,3,128,16,0,0,0))
@@ -144,13 +144,13 @@ do
 			 If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People")) { New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" | Out-Null }
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" -Name "PeopleBand" -Type DWord -Value 0
              
-             #Power Throttling
+                         #Power Throttling
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling" -Name "PowerThrottlingOff" -Type DWord -Value 00000000
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power" -Name "HiberbootEnabled" -Type DWord -Value 0000001
 			 
 			 #Changing Explorer view to This PC
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "LaunchTo" -Type DWord -Value 1
-		     #Hiding 3D Objects icon from This PC
+		         #Hiding 3D Objects icon from This PC
 			 Remove-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}" -Recurse -ErrorAction SilentlyContinue  
              
 			 #Feedback
@@ -159,6 +159,7 @@ do
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "DoNotShowFeedbackNotifications" -Type DWord -Value 1
 			 Disable-ScheduledTask -TaskName "Microsoft\Windows\Feedback\Siuf\DmClient" -ErrorAction SilentlyContinue | Out-Null
 			 Disable-ScheduledTask -TaskName "Microsoft\Windows\Feedback\Siuf\DmClientOnScenarioDownload" -ErrorAction SilentlyContinue | Out-Null
+			 
 			 #Activity History
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "EnableActivityFeed" -Type DWord -Value 0
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name "PublishUserActivities" -Type DWord -Value 0
@@ -167,7 +168,8 @@ do
 			 Set-ItemProperty -Path "HKLM:\System\GameConfigStore" -Name "GameDVR_HonorUserFSEBehaviorMode" -Type Hex -Value 00000000
 			 Set-ItemProperty -Path "HKLM:\System\GameConfigStore" -Name "GameDVR_EFSEFeatureFlags" -Type Hex -Value 00000000
 			 Set-ItemProperty -Path "HKLM:\System\GameConfigStore" -Name "GameDVR_Enabled" -Type DWord -Value 00000000
-			 #Application
+			 
+			 #Applications
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "ContentDeliveryAllowed" -Type DWord -Value 0
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "OemPreInstalledAppsEnabled" -Type DWord -Value 0
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "PreInstalledAppsEnabled" -Type DWord -Value 0
@@ -179,32 +181,41 @@ do
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "SubscribedContent-353698Enabled" -Type DWord -Value 0
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" -Name "SystemPaneSuggestionsEnabled" -Type DWord -Value 0
 			 New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent" -Force | Out-Null
+			 
 			 #Tailored Experiences
 			 New-Item -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\CloudContent" -Force | Out-Null
 			 set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\CloudContent" -Name "DisableTailoredExperiencesWithDiagnosticData" -Type DWord -Value 1
+			 
 			 #Advertising ID
 			 New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" | Out-Null
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo" -Name "DisabledByGroupPolicy" -Type DWord -Value 1
+			 
 			 #Error reporting
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting" -Name "Disabled" -Type DWord -Value 1
 			 Disable-ScheduledTask -TaskName "Microsoft\Windows\Windows Error Reporting\QueueReporting" | Out-Null
-			 #Restricting Windows Update peer to peer to only transmit locally
+			 
+			 #Windows Update peer to peer to only transmit locally
 				New-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" | Out-Null
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" -Name "DODownloadMode" -Type DWord -Value 1
-			 #Disabling Diagnostics Tracking Service
+			 
+			 #Diagnostics Tracking Service
 			 Stop-Service "DiagTrack" -WarningAction SilentlyContinue
 			 Start-Sleep 1
 			 Set-Service "DiagTrack" -StartupType Disabled
-			 #Disabling WAP Push Service..."
+			 
+			 #WAP Push Service
 			 Stop-Service "dmwappushservice" -WarningAction SilentlyContinue
 			 Start-Sleep 1
 			 Set-Service "dmwappushservice" -StartupType Disabled
+			 
 			 #Enabling F8 boot menu
 			 bcdedit /set `{current`} bootmenupolicy Legacy | Out-Null
-			 #Disabling Superfetch service..."
+			 
+			 #Disabling Superfetch service
 			 Stop-Service "SysMain" -WarningAction SilentlyContinue
 			 Start-Sleep 1
 			 Set-Service "SysMain" -StartupType Disabled
+			 
 			 #Location Tracking"
 			 #Test if reg key is there if it is rewrite
 			 If (!(Test-Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location")) {
@@ -213,15 +224,19 @@ do
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location" -Name "Value" -Type String -Value "Deny"
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Type DWord -Value 0
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lfsvc\Service\Configuration" -Name "Status" -Type DWord -Value 0
-			<#An autologger is a trace session that records events from user-mode and kernel-mode trace providers during the boot process. This feature lets you trace the actions of a trace provider while Windows is booting.
+			 
+			 <#An autologger is a trace session that records events from user-mode and kernel-mode trace providers during the boot process. This feature lets you trace the actions of a trace provider while Windows is booting.
 			 Removing AutoLogger file and restricting directory#>
 			 $autoLoggerDir = "$env:PROGRAMDATA\Microsoft\Diagnosis\ETLLogs\AutoLogger"
 			 If (Test-Path "$autoLoggerDir\AutoLogger-Diagtrack-Listener.etl") { Remove-Item "$autoLoggerDir\AutoLogger-Diagtrack-Listener.etl" }
 			 icacls $autoLoggerDir /deny SYSTEM:`(OI`)`(CI`)F | Out-Null
+			 
 			 #Maps update
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\Maps" -Name "AutoUpdateEnabled" -Type DWord -Value 0 
+			
 			 #Storage Sense
-        	 Remove-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" -Recurse -ErrorAction SilentlyContinue 
+        	         Remove-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy" -Recurse -ErrorAction SilentlyContinue 
+			 
 			 ## Performance Tweaks and More Telemetry
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching" -Name "SearchOrderConfig" -Type DWord -Value 00000000
 			 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" -Name "SystemResponsiveness" -Type DWord -Value 0000000a
@@ -236,18 +251,23 @@ do
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name "ClearPageFileAtShutdown" -Type DWord -Value 00000000
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\ControlSet001\Services\Ndu" -Name "Start" -Type DWord -Value 00000004
 			 Set-ItemProperty -Path "HKLM:\Control Panel\Mouse" -Name "MouseHoverTime" -Type DWord -Value 00000010
+			 
 			 # Network Tweaks
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" -Name "IRPStackSize" -Type DWord -Value 20
+			 
 			 # Group svchost.exe processes
 			 $ram = (Get-CimInstance -ClassName Win32_PhysicalMemory | Measure-Object -Property Capacity -Sum).Sum / 1kb
 			 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control" -Name "SvcHostSplitThresholdInKB" -Type DWord -Value $ram -Force
 			 Write-Host "Disable News and Interests"
 			 Set-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" -Name "EnableFeeds" -Type DWord -Value 0
+			 
 			 # Remove "News and Interest" from taskbar
 			 Set-ItemProperty -Path  "HKCU:\Software\Microsoft\Windows\CurrentVersion\Feeds" -Name "ShellFeedsTaskbarViewMode" -Type DWord -Value 2
+			 
 			 #Stopping and disabling Diagnostics Tracking Service..."
 			 Stop-Service "DiagTrack"
 			 Set-Service "DiagTrack" -StartupType Disabled
+			 
 			 # remove "Meet Now" button from taskbar
 			 If (!(Test-Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer")) {
 				New-Item -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Force | Out-Null
