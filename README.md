@@ -53,13 +53,35 @@ Disable WAP Push Service
 Enables F8 boot menu for recovery
 Disables Windows SuperFetch Service
 Disable Location Tracking
-Remove AutoLogger file and restricting directory
+Remove AutoLogger file and restrict the directory
 Disable Telemetry
 Group SVCHost Processes
 Remove News and Interests
 Disabling Diagnostic Tracking Service
 Remove Meet Now from Taskbar
-Disable Numlock on startup<br><br>
+Disable Numlock on startup
+Sets Task Manager to Open to Detailed View
+Do not allow apps to use advertising ID
+Hide the Windows welcome experiences after updates
+Do not get tips, tricks, and suggestions as you use Windows
+Turn off automatic installing suggested apps
+Do not suggest ways I can finish setting up my device to get the most out of Windows
+Do not show sync provider notification within File Explorer
+Show the file transfer dialog box in the detailed mode
+Do not display the recycle bin files delete confirmation dialog (default value)
+Hide recently used files & folders in Quick access
+Show the search box on the taskbar 
+Hide search highlights
+Hide the Windows Ink Workspace button on the taskbar
+Control Panel Behavior - Open Large Icons
+Disable First Logon Animation
+Task Manager Open Expanded
+Show PC needs to restart notification
+Disable appdending "shortcut" to links created
+Set Printscreen to Open the Snipping Tool
+Remove "News and Interest" from taskbar
+Group svchost.exe processes together
+Disable Storage Sense<br><br>
 
 <b>Removal of the following AppxPackages</b>
 3DBuilder
@@ -137,8 +159,7 @@ GetHelp
 Hulu
 Netflix
 Spotify
-Messaging
-</pre>
+Messaging</pre>
 
 <h2>Option 2</h2><br><br>
 <pre>Option Two is used to install Chrome, as well as MSEdgeRedirect to remove Edge as the default browser down to the system level.</pre><br><br>
