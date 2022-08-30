@@ -7,6 +7,15 @@ By: Alan Newingham
 Write-Host Creating a Restore Point
         Enable-ComputerRestore -Drive "C:\"
         Checkpoint-Computer -Description "iNetsRestorePoint" -RestorePointType "MODIFY_SETTINGS"
+Write-Host "Backing Up Registry Data to C:\Registry Data"
+	If (!(Test-Path "C:\Registry Backup\")) {
+		New-Item -Path "C:\" -Name "Registry Backup" -ItemType "Directory"
+	}
+			reg export HKCR C:\Registry Backup\HKCR.Reg /y
+			reg export HKCU C:\Registry Backup\HKCU.Reg /y
+			reg export HKLM C:\Registry Backup\HKLM.Reg /y
+			reg export HKU C:\Registry Backup\HKU.Reg /y
+			reg export HKCC C:\Registry Backup\HKCC.Reg /y
 
 function Show-Menu
 {
