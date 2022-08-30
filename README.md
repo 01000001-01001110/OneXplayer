@@ -21,8 +21,9 @@ To set the second script to run from a desktop shortcut right click and select> 
 
 <h1>What does this script do?</h1>
 
-First Creates a Restore Point named: "iNetsRestorePoint" in case anything bad happens. <br><br>
-Opens the Menu <pre>
+First - Creates a Restore Point named: "iNetsRestorePoint" in case anything bad happens. <br><br>
+Second - Backs up the registry data to C:\Registry Backup<br><br>
+Third - Opens the Menu <pre>
     Press '1' Nuke bloatware.
     Press '2' Install Chrome
     Press '3' Install Firefox
